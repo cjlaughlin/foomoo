@@ -9,8 +9,8 @@
 
 	<body>
 		<div id="wrapper">	
-			<div id="food"></div>
-			<div id="mood"></div>
+			<div id="food"><p></p></div>
+			<div id="mood"><p></p></div>
 		</div> <!-- wrapper -->
 	<script>
 		$(document).ready(function() {
@@ -19,10 +19,13 @@
 				if (this.id == 'wrapper'){
 					return;
 				}else{
-					$(this).text(this.id);
+					$(this).children('p').text(this.id);
 				};
 			});//div.each put ID as text
 
+			$('div > div').click(function() {
+				alert(this.id);
+			});//click function
 		}); //document.ready
 
 
