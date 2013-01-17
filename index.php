@@ -26,9 +26,29 @@
 			$('div > div').click(function() {
 				alert(this.id);
 			});//click function
+
 		}); //document.ready
 
+function meal(){  
+    iAm = 'an object';  
+    whatAmI = function(){  
+        alert('I am ' + this.iAm);  
+    };  
+}; 
 
+
+/*
+console.log(testObject.sProp)
+
+// Put the object into storage
+localStorage.setItem('testObject', testObject);
+
+// Retrieve the object from storage
+var retrievedObject = localStorage.getItem('testObject');
+
+console.log('retrievedObject: ', retrievedObject);
+console.log(retrievedObject.sProp);
+*/
 	</script>
 
 	</body>
