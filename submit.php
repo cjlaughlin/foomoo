@@ -1,13 +1,23 @@
-<?php 
+<?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+print_r($_POST);
 
-if (empty($_GET)) {
-    echo '$_GET is empty, bro';
+$meal_id = $_POST['id'];
+$user_id = $_POST['user_id'];
+$amount = $_POST['amount'];
+
+foreach ($_POST['food_log'] as $innerArray) {
+	
+        foreach ($innerArray as $value) {
+            echo $value;
+        }
+    }
 
 
-} else if ($_GET['startNewMeal'] == 1) { 
+/*
+
 	$con = mysql_connect("209.208.78.169","php","phpass");
 	if (!$con)
 	  {
@@ -27,23 +37,6 @@ if (empty($_GET)) {
 
 	mysql_close($con);
 
-
-//} else if ($_GET['startNewMeal'] == 1) { 
-
-} else {
-
-	mysql_close($con);
-
-}
-
-//$userID = ($_GET['userID']);
-//$airTemp = ((($_GET['airTemperatureValue']/100)*1.8)+32);
-//$airMoisture = ($_GET['airMoistureValue']/100);
-//$soilTemp = ($_GET['soilTemperatureValue']/100);
-//$soilMoisture = ($_GET['soilMoistureValue']/100);
-//$lightValue = ($_GET['lightValue']/100);
-
-//mysql_query("INSERT INTO $userID (airTemp,airMoisture,soilTemp,soilMoisture,lightValue) VALUES ($airTemp,$airMoisture,$soilTemp,$soilMoisture,$lightValue);");
-
+*/
 
 ?>

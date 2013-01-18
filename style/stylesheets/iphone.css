@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 6, ../sass/iphone.scss */
 #wrapper {
-  position: absolute;
-  height: 100%;
+  //position: absolute;
+  height: 50%;
   width: 100%;
 }
 
