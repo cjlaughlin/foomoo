@@ -48,8 +48,8 @@
 
 			$('#add').click(function() {
 				meal.food_log.push([
-					'001', //tofu
-					'001' //raw
+					{'type' : '001', //tofu
+					'style' : '002'} //raw
 					]);
 			});
 

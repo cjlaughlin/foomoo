@@ -8,12 +8,28 @@ $meal_id = $_POST['id'];
 $user_id = $_POST['user_id'];
 $amount = $_POST['amount'];
 
+	$con = mysql_connect("209.208.78.169","php","phpass");
+	if (!$con)
+	  {
+	  die('Could not connect: ' . mysql_error());
+	  }
+	mysql_select_db("foomoo") or die(mysql_error());
+
+
 foreach ($_POST['food_log'] as $innerArray) {
-	
-        foreach ($innerArray as $value) {
-            echo $value;
+
+        foreach ($innerArray as $key => $value) {
+            $type_id = $value['type'];
+            $style_id = $value['style'];
+            mysql_query("INSERT INTO `food_log` (`meal_id`, `type_id`, `style_id`) VALUES ( $meal_id, $type_id, $style_id);");
         }
+        //echo "<br>";
     }
+
+mysql_close($con);
+
+
+
 
 
 /*
