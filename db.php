@@ -46,4 +46,8 @@ if (empty($_GET)) {
 //mysql_query("INSERT INTO $userID (airTemp,airMoisture,soilTemp,soilMoisture,lightValue) VALUES ($airTemp,$airMoisture,$soilTemp,$soilMoisture,$lightValue);");
 
 
+//----good queries-----
+//gets all meal id's of a particular user, based on user name
+//select meal_id from users NATURAL JOIN meal_log WHERE users.user_name = 'Test User';
+
 ?>

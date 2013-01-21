@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 		<link rel="stylesheet" href="style/stylesheets/iphone.css">
 		<script type="text/javascript" src="//use.typekit.net/fni7ssq.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -34,6 +35,8 @@
 				    this.food_log = []
 				    }; 
 			$('div > div').click(function() {
+				$(this).parent().append('<div>heya heya heya</div>');
+				$(this).siblings().hide("slide", { direction: "left" }, 250);
 
 				$.get( //sends a get request to db.php
 				    "db.php",
@@ -67,7 +70,8 @@
 					  data: meal,
 					   success: function(res){
 						   // res will be a 'text' result from the php script. simply alert it so we can debug.
-						   alert(res);
+						   console.log(res);
+						   //alert(res);
 						 }
 					  
 					});
