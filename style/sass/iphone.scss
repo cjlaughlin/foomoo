@@ -29,11 +29,11 @@ p {
 
 #food {
 	background-color: $maroon;
-	&:hover { background-color: lighten($maroon, 10%); }
+	//&:hover { background-color: lighten($maroon, 10%); }
 }
 
 
 #mood {
 	background-color: darken($maroon, 10%);
-	&:hover { background-color: lighten($maroon, 10%); }
+	//&:hover { background-color: lighten($maroon, 10%); }
 }

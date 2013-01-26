@@ -17,8 +17,14 @@
 		<a id="amount" href="#">Add Amount</a><BR>
 		<a id="submit" href="#">Submit</a>
 	<script>
+
+
 		$(document).ready(function() {
 
+			// $('#mood').on('touchstart',function () {
+			// 	alert(this.id);
+			// });
+					
 			$('div').each(function(index) {
 				if (this.id == 'wrapper'){
 					return;
@@ -33,8 +39,11 @@
 					this.user_id = '001',
 					this.amount = null,
 				    this.food_log = []
-				    }; 
-			$('div > div').click(function() {
+				    };
+			// binds the touch event AND the click event to the element	     
+			$('div > div').on('touchstart click', function(e) {
+				//if it gets a touchstart, then prevent the click event from firing
+				e.preventDefault();
 				$(this).parent().append('<div>heya heya heya</div>');
 				$(this).siblings().hide("slide", { direction: "left" }, 250);
 
