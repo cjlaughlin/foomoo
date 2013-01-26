@@ -2,6 +2,12 @@
 
 
 $maroon: #990033;
+$charcoal: #202020;
+
+
+body {
+	background-color: $charcoal;
+}
 
 #wrapper {
 	position: absolute;
@@ -13,7 +19,7 @@ $maroon: #990033;
 	height: 50%;
 	width: 100%;	
 	//font-family: "chaparral-pro-caption",sans-serif;
-	font-family: "Chaparral Pro",sans-serif;
+	font-family: "Chaparral Pro", "chaparral-pro-caption" ,sans-serif;
 	font-style: italic;
 	font-weight: 700;
 	color: white;

@@ -20,11 +20,7 @@
 
 
 		$(document).ready(function() {
-
-			// $('#mood').on('touchstart',function () {
-			// 	alert(this.id);
-			// });
-					
+			//div.each put ID as text
 			$('div').each(function(index) {
 				if (this.id == 'wrapper'){
 					return;
@@ -40,12 +36,14 @@
 					this.amount = null,
 				    this.food_log = []
 				    };
+
 			// binds the touch event AND the click event to the element	     
 			$('div > div').on('touchstart click', function(e) {
 				//if it gets a touchstart, then prevent the click event from firing
 				e.preventDefault();
+				$(this).animate({ height : 200 }, 500);
 				$(this).parent().append('<div>heya heya heya</div>');
-				$(this).siblings().hide("slide", { direction: "left" }, 250);
+				$(this).siblings().hide("slide", { direction: "up" }, 250);
 
 				$.get( //sends a get request to db.php
 				    "db.php",

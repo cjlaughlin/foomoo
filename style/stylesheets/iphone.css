@@ -63,18 +63,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../sass/iphone.scss */
+/* line 8, ../sass/iphone.scss */
+body {
+  background-color: #202020;
+}
+
+/* line 12, ../sass/iphone.scss */
 #wrapper {
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
-/* line 12, ../sass/iphone.scss */
+/* line 18, ../sass/iphone.scss */
 #food, #mood {
   height: 50%;
   width: 100%;
-  font-family: "Chaparral Pro",sans-serif;
+  font-family: "Chaparral Pro", "chaparral-pro-caption", sans-serif;
   font-style: italic;
   font-weight: 700;
   color: white;
@@ -83,18 +88,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: table;
 }
 
-/* line 25, ../sass/iphone.scss */
+/* line 31, ../sass/iphone.scss */
 p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 30, ../sass/iphone.scss */
+/* line 36, ../sass/iphone.scss */
 #food {
   background-color: #990033;
 }
 
-/* line 36, ../sass/iphone.scss */
+/* line 42, ../sass/iphone.scss */
 #mood {
   background-color: #660022;
 }
