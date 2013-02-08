@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -70,76 +70,91 @@ html, body {
 }
 
 /* line 12, ../sass/iphone.scss */
-body {
-  background-color: #282828;
-}
-
-/* line 18, ../sass/iphone.scss */
-#wrapper {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* line 25, ../sass/iphone.scss */
-#food, #mood {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  font-family: "Palatino-BoldItalic", serif;
-  color: white;
-  font-size: 72px;
+div {
+  float: left;
+  clear: both;
+  height: 30px;
+  width: 320px;
+  border: solid 1px grey;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 30px;
   text-align: center;
-  display: table;
 }
 
-/* line 39, ../sass/iphone.scss */
+/*
+body {
+	background-color: $charcoal;
+}
+
+#wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#food, #mood {
+	position: relative;
+	height: 50%;
+	width: 100%;	
+	//font-family: "chaparral-pro-caption",sans-serif;
+	font-family: "Palatino-BoldItalic" , serif;
+	// font-style: italic;
+	// font-weight: 700;
+	color: white;
+	font-size: 72px;
+	text-align: center;
+	display: table;
+}
+
 p {
-  display: table-cell;
-  vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-/* line 44, ../sass/iphone.scss */
 #food {
-  background-color: #990033;
+	background-color: $maroon;
+	//&:hover { background-color: lighten($maroon, 10%); }
 }
 
-/* line 50, ../sass/iphone.scss */
+
 #mood {
-  background-color: #660022;
+	background-color: darken($maroon, 10%);
+	//&:hover { background-color: lighten($maroon, 10%); }
 }
 
-/* line 56, ../sass/iphone.scss */
+
 #food_log {
-  float: left;
-  height: 300px;
-  width: 320px;
-  overflow: scroll;
-  background-color: blue;
-  white-space: nowrap;
+	float: left;
+	height: 300px;
+	width: 320px;
+	overflow: scroll;
+	background-color: blue;
+	white-space: nowrap;
 }
 
-/* line 65, ../sass/iphone.scss */
 #crud {
-  float: left;
-  height: 300px;
-  width: 320px;
-  overflow: scroll;
-  background-color: green;
-  white-space: nowrap;
+	float: left;
+	height: 300px;
+	width: 320px;
+	overflow: scroll;
+	background-color: green;
+	white-space: nowrap;
 }
 
-/* line 74, ../sass/iphone.scss */
 .food_log_item {
-  float: left;
-  height: 50px;
-  width: 305px;
-  padding-left: 15px;
-  color: grey;
-  font-family: "Helvetica", sans-serif;
-  font-size: 25px;
-  line-height: 50px;
-  background-color: #424242;
-  border-bottom: solid 2px grey;
+	float: left;
+	height: 50px;
+	width: 305px;
+	padding-left: 15px;
+	color: grey;
+	font-family: "Helvetica" , sans-serif;
+	font-size: 25px;
+	line-height: 50px;
+	background-color: lighten($charcoal, 10%);
+	border-bottom: solid 2px grey;
 }
+
+
+*/
