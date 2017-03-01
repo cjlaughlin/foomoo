@@ -23,7 +23,7 @@ foreach ($_POST['food_log'] as $innerArray) {
             $style_id = $value['style'];
             mysql_query("INSERT INTO `food_log` (`meal_id`, `type_id`, `style_id`) VALUES ( $meal_id, $type_id, $style_id);");
         }
-        //echo someting else
+        //echo nothing here
     }
 
 mysql_close($con);
