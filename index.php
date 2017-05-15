@@ -11,7 +11,9 @@
         <meta name="apple-touch-fullscreen" content="yes" />
 	</head>
 
-	<!-- this makes the addressbar dissppear total test-->
+
+	<!-- this makes the addressbar dissppear test edit-->
+	<!-- can you see this -->
 	<!-- <body onload="window.top.scrollTo(0,1);"> -->
 	<body>
 		<div id="food">food</div>
