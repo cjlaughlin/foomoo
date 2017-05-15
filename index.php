@@ -15,6 +15,7 @@
 	<!-- this makes the addressbar dissppear test edit-->
 	<!-- can you see this -->
 	<!-- another test -->
+	<!-- i agree -->
 	<!-- <body onload="window.top.scrollTo(0,1);"> -->
 	<body>
 		<div id="food">food</div>
