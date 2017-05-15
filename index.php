@@ -11,7 +11,7 @@
         <meta name="apple-touch-fullscreen" content="yes" />
 	</head>
 
-	<!-- this makes the addressbar dissppear -->
+	<!-- this makes the addressbar dissppear total test-->
 	<!-- <body onload="window.top.scrollTo(0,1);"> -->
 	<body>
 		<div id="food">food</div>
@@ -25,7 +25,7 @@
 			food = 0;
 
 			//constructor for meal object
-			function mealObject(meal_id){  
+			function mealObject(meal_id){
 				this.id = meal_id,
 				this.user_id = '001',
 				this.amount = null,
@@ -38,27 +38,27 @@ window.addEventListener("storage", function(e) {
    console.debug(e);
 }, false);
 
-			// binds the touch event AND the click event to the element	     
+			// binds the touch event AND the click event to the element
 			$('#food').on('touchstart', function(e) {
 				//if it gets a touchstart, then prevent the click event from firing
 				e.preventDefault();
 
-				
+
 				if (food == 1){
 					console.log("Already got a Meal ID!");
 
 				}else{
 					food = 1;
-				
+
 						foodLog = $('#food_log')
-						
+
 						console.log("Accessing database...")
 						$.get( //sends a get request to db.php
 						    "db.php",
 						    {startNewMeal : 1, user_id : 001},
 						    function(data) {
 						   		//instantiates a new meal object and passes the meal_id from data to it
-								meal = new mealObject(data); 
+								meal = new mealObject(data);
 
 						       	console.log('meal_id = ' + data);
 
@@ -73,8 +73,8 @@ window.addEventListener("storage", function(e) {
 						);//$.get
 
 					};
-					
-				
+
+
 
 				});//click function
 
@@ -102,7 +102,7 @@ window.addEventListener("storage", function(e) {
 								   console.log(res);
 								   //alert(res);
 								 }
-							  
+
 							});
 					});
 
@@ -113,16 +113,16 @@ window.addEventListener("storage", function(e) {
 
 
 /*
-function meal(){  
-    this.iAm = 'an object';  
-    this.whatAmI = function(){  
-        alert('I am ' + this.iAm);  
-    };  
-}; 
+function meal(){
+    this.iAm = 'an object';
+    this.whatAmI = function(){
+        alert('I am ' + this.iAm);
+    };
+};
 
-var myNewObject = new meal('an object');  
+var myNewObject = new meal('an object');
 
-myNewObject.whatAmI('JavaScript');  
+myNewObject.whatAmI('JavaScript');
 
 
 
@@ -141,4 +141,3 @@ console.log(retrievedObject.sProp);
 
 	</body>
 </html>
-
